@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <h1>Add Product</h1>
+  <form method="post" novalidate>
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-6">
+        {{ form.name|as_crispy_field }}
+      </div>
+      <div class="col-6">
+        {{ form.category|as_crispy_field }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        {{ form.price|as_crispy_field }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        {{ form.description|as_crispy_field }}
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+  </form>
+{% endblock %}
