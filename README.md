@@ -4,7 +4,7 @@ Advanced Crispy Forms Examples
 Running the Project Locally
 First, clone the repository to your local machine:
 
-git clone 
+git clone https://github.com/pranalikambli/django_crispy_forms.git
 Install the requirements:
 
 pip install -r requirements.txt
